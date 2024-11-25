@@ -1,70 +1,79 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# E-commerce Project: Managing an Unfinished Open Source Project
 
-In the project directory, you can run:
+> **Note**: This is the initial version of the project. The complete and fully developed version is available in the organization's repository. To gain access to the full version or the latest updates, please contact me for permissions to access the real or developed version.
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project provides an e-commerce platform where users can manage their own online stores. It utilizes **React** for the frontend, **Supabase** for the backend and authentication, and **Context API** for state management.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Project Screenshot](./images/project-screenshot.png)
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **User Authentication**: Secure sign-in and sign-up functionality using Supabase.
+- **State Management**: Handled with **React Context API** for global state management.
+- **Create Your Own Store**: Users can create and manage their personalized online stores.
+- **Real-Time Updates**: Using Supabase for real-time data synchronization.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React.js
+- **Backend**: Supabase
+- **Authentication**: Supabase Auth
+- **State Management**: React Context API
+- **Real-Time Updates**: Supabase Realtime
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup & Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js
+- Git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Steps
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone https://github.com/your-repo-url
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
 
-## Learn More
+   ```bash
+   cd your-project-folder
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Set up Supabase:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   - Create a Supabase account at [supabase.io](https://supabase.io) and set up a new project.
+   - Update the `.env` file with your Supabase credentials:
 
-### Code Splitting
+     ```
+     NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+     NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Run the development server:
 
-### Analyzing the Bundle Size
+   ```bash
+   npm run dev
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   Your application should now be running at `http://localhost:3000`.
 
-### Making a Progressive Web App
+![Admin Dashboard](./images/admin-dashboard.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+### Key Points:
+- The note at the beginning clearly explains that this is the initial version.
+- It directs users to contact you for the full version or further access.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
